@@ -1,5 +1,6 @@
 import React from "react";
-import { Button, StyleSheet, Text, View, TouchableOpacity } from "react-native";
+import { Button, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 
 const items = [
