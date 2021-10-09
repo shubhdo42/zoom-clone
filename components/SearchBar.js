@@ -1,11 +1,12 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
-import Fontisto from "react-native-vector-icons/Entypo";
+import Fontisto from "react-native-vector-icons/Fontisto";
 
 function SearchBar() {
   return (
     <View style={styles.container}>
-      <Text>SearchBar</Text>
+      <Fontisto name="search" size={20} color="#858585" />
+      <Text style={styles.textSearchBar}>Search</Text>
     </View>
   );
 }
@@ -13,5 +14,17 @@ function SearchBar() {
 export default SearchBar;
 
 const styles = StyleSheet.create({
-  container: {},
+  container: {
+    backgroundColor: "#333333",
+    flexDirection: "row",
+    paddingHorizontal: 10,
+    height: 30,
+    alignItems: "center",
+    borderRadius: 10,
+  },
+  textSearchBar: {
+    color: "#858585",
+    paddingLeft: 10,
+    fontSize: 20,
+  },
 });
